@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  aptrepo:
+    container_name: local-aptrepo
+    image: repo-server:latest
+    ports:
+      - 127.0.0.1:8000:8000
+    hostname: aptrepo
+
